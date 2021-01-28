@@ -1,10 +1,9 @@
-# Api - Compre Já
+# Api - Gestana
 
 ## Tecnologias Usadas
 
 - Laravel
 - Postgres
-- JWT
 - REST
 ## Objetivo
 
@@ -27,11 +26,13 @@ Desenvolver uma API REST para gestao de produtos. A API deve possibilitar todo o
         ```
     - Retornos possíveis
 
+        Retornar um array com o produto cadastrado. Atributos: nome, valor unitário, quantidade em estoque.
+
         Código | Resposta
         ------------ | -------------
         `201 (Criado)` | `Produto cadastrado ` 
         `400 (Requisição inválida)` | `Ocorreu um erro desconhecido`
-        `412 (Pré-condição falhou)` | `Os valores informados não são    válidos.`
+        `412 (Pré-condição falhou)` | `Os valores informados não são válidos.`
 
 2. Listar produtos
 
