@@ -14,7 +14,6 @@ class ProductResource extends JsonResource
      */
     public function toArray($request)
     {
-        dd($request);
         return [
             'nome' => $request->name,
             'valor_unitario' => $request->price,
